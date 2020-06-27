@@ -3,16 +3,13 @@ class RingBuffer:
         self.capacity = capacity
         self.age = 0
         self.list = []
-     
-    
+
     def get(self):
-        print(f"{self.list}")
-               
+        return self.list
 
     def append(self, item):
         size = len(self.list)
         capacity = self.capacity
-      
 
         if size < capacity:
             return self.list.append(item)
@@ -26,16 +23,9 @@ class RingBuffer:
                 self.list.insert(self.age, item)
                 self.list.pop(self.age+1)
                 self.age += 1
-                
-    
 
-        
-            
-            
-                
-            
-        
-buffer = RingBuffer(3)
+
+'''buffer = RingBuffer(5)
 
 buffer.get()   # should return []
 
@@ -54,7 +44,6 @@ buffer.append('e')
 buffer.append('f')
 buffer.append('g')
 buffer.append('h')
-buffer.append('i')
+buffer.append('i') 
 
-
-buffer.get()   # should return ['d', 'e', 'f']
+buffer.get()   # should return ['d', 'e', 'f']'''
