@@ -25,7 +25,7 @@ class RingBuffer:
                 self.age += 1
 
 
-'''buffer = RingBuffer(5)
+'''buffer = RingBuffer(3)
 
 buffer.get()   # should return []
 
