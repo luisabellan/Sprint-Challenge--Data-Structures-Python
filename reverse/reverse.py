@@ -83,28 +83,24 @@ print (f"runtime: {end_time - start_time} seconds")
 #
 # print (f"runtime: {end_time - start_time} seconds") # runtime: 6.937980651855469e-05 seconds using array
 
-
-""" list = LinkedList()
-list.add_to_head(1)
-list.add_to_head(2)
-list.add_to_head(3)
-print(list.head.get_value())
-
-list2 = LinkedList()
-node = Node(list.head.get_value())
-list2.add_to_head(prev) """
-"""
-
-list = LinkedList()
-list.add_to_head(1)
-list.add_to_head(2)
-list.add_to_head(3)
-list.add_to_head(4)
-list.add_to_head(5)
-#print(list.head.value) # 5
-list.reverse_list(list.head, None)
-print(list.head.value) # 5 -> 1
-print(list.head.get_next().value) # 4 -> 2
-print(list.head.get_next().get_next().value) # 3 -> 3
-
- """
+#
+# list = LinkedList()
+# list.add_to_head(1)
+# list.add_to_head(2)
+# list.add_to_head(3)
+# print(list.head.get_value())
+#
+#
+#
+#
+# list = LinkedList()
+# list.add_to_head(1)
+# list.add_to_head(2)
+# list.add_to_head(3)
+# list.add_to_head(4)
+# list.add_to_head(5)
+# #print(list.head.value) # 5
+# list.reverse_list(list.head, None)
+# print(list.head.value) # 5 -> 1
+# print(list.head.get_next().value) # 4 -> 2
+# print(list.head.get_next().get_next().value) # 3 -> 3
