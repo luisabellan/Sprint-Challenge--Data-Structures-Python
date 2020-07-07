@@ -1,3 +1,7 @@
+import time
+
+start_time = time.time()
+
 class Node:
     def __init__(self, value=None, next_node=None):
         self.value = value
@@ -63,7 +67,21 @@ class LinkedList:
 
         # updates original head
         self.head = _reverse(node=self.head, prev=None)
+end_time = time.time()
 
+#runtime: 2.5272369384765625e-05 seconds using LL
+# runtime: 6.937980651855469e-05 seconds using array
+print (f"runtime: {end_time - start_time} seconds")
+
+
+# Stretch: using python arrays or lists
+# array = [5,4,3,2,1]
+# for i in reversed(array):
+#     print(i)
+#
+# end_time = time.time()
+#
+# print (f"runtime: {end_time - start_time} seconds") # runtime: 6.937980651855469e-05 seconds using array
 
 
 """ list = LinkedList()
