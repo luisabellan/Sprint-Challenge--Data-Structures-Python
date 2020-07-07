@@ -61,10 +61,8 @@ buffer.get()   # should return ['d', 'e', 'f']
 ***!Important!*** If you are running this using PowerShell by clicking on the green play button, you will get an error that `names1.txt` is not found.  To resolve this, run it, get the error, then `cd` into the `names` directory in the `python` terminal that opens in VSCode.
 
 Navigate into the `names` directory. Here you will find two text files containing 10,000 names each, along with a program `names.py` that compares the two files and prints out duplicate name entries. Try running the code with `python3 names.py`. Be patient because it might take a while: approximately six seconds on my laptop. What is the runtime complexity of this code?
-Let's see:
-there is a for loop: O(n)
-and there is another for loop inside: O(n)
-so the answer is O(n) * O(n) = O(n^2)
+
+O(n^2)
 
 Six seconds is an eternity so you've been tasked with speeding up the code. Can you get the runtime to under a second? Under one hundredth of a second?
 
@@ -88,7 +86,7 @@ would become...
 
 While credit will be given for a functional solution, only optimal solutions will earn a ***3*** on this task.
 
-#### Stretch 
+#### Stretch
 
 * Say your code from `names.py` is to run on an embedded computer with very limited RAM. Because of this, memory is extremely constrained and you are only allowed to store names in arrays (i.e. Python lists). How would you go about optimizing the code under these conditions? Try it out and compare your solution to the original runtime. (If this solution is less efficient than your original solution, include both and label the strech solution with a comment)
 
