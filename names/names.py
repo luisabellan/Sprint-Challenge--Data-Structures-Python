@@ -28,7 +28,7 @@ duplicates = []  # Return the list of duplicates in this data structure
 
 end_time = time.time()
 print (f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
-print (f"runtime: {end_time - start_time} seconds") # runtime: 3.255688428878784 seconds
+print (f"runtime: {end_time - start_time} seconds") # runtime: 3.255688428878784 seconds with comprehension list
 
 # ---------- Stretch Goal -----------
 # Python has built-in tools that allow for a very efficient approach to this problem
