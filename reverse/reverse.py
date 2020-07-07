@@ -50,7 +50,7 @@ class LinkedList:
         #     current = next
         # self.head = prev
 
-        # Recursively
+        # Recursively - Here the runtime will depend on the number of nodes so O(n)
 
         def _reverse(node, prev):
             if not node:
